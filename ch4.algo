@@ -1,0 +1,14 @@
+ALGORITHM insetion_sort(var tab: ARRAY_OF INTEGER;)
+VAR
+    i,j,a:INTEGER;
+BEGIN
+   FOR i FROM 1 TO tab.length-1 STEP 1  DO
+    a:=tab[i];
+    j=i-1;
+     WHILE (j >= 1 && tab[j]>a) DO
+            tab[j+1] = tab[j]
+            j--
+        END_WHILE
+        tab[j+1] = a
+    END_FOR   
+END
